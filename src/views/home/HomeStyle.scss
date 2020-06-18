@@ -1,0 +1,113 @@
+@import "common/styles/_colors.scss";
+// @import "common/styles/_fonts.scss";
+
+.sflight {
+  .scontainer {
+    &.scontainer-fluid {
+      margin: auto 0;
+    }
+    margin: auto 2em;
+    .sfilter {
+      padding: 0;
+    }
+    .sresult {
+      margin: 0;
+      padding: 0;
+      .sresult-row {
+        // background-color: $white;
+        margin: 20px;
+        border-bottom: 1px solid $borderColor;
+        td {
+          vertical-align: middle;
+          .icon {
+            text-align: center;
+          }
+          border: 0;
+          .f-duration {
+            div {
+              text-align: "center";
+            }
+          }
+        }
+      }
+      .sresult-col {
+        &.responsive-col {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.react-bootstrap-table {
+  th {
+    .order {
+      .dropup,
+      .dropdown {
+        .caret {
+          color: black !important;
+        }
+      }
+    }
+  }
+  caption {
+    caption-side: top;
+  }
+  .searchBtn {
+    color: $white !important;
+    background-color: $red !important;
+    border: 0 !important;
+    font-size: 0.8em;
+    // color: $red;
+    // border-color: $red;
+    &:hover {
+    }
+  }
+}
+
+.react-bootstrap-table th > .react-bootstrap-table-sort-order > .caret {
+  color: black;
+}
+.border-bottom {
+  border-bottom: 1px solid $borderColor;
+}
+.multipleFlight {
+  background-color: $shadedGray;
+  margin: 0;
+  padding: 10px;
+}
+.layoverStrip {
+  background: $secondary;
+  margin: 0;
+  justify-content: center;
+  color: $white;
+}
+.note {
+  font-size: 14px;
+  color: $lightTextColor;
+}
+.caption-title {
+  border-radius: 0.25em;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+.fa-plane {
+  font-size: 1.5em;
+  color: $lightIcon;
+  transform: rotate(305deg);
+  &.responsive {
+    font-size: 1.2em;
+    transform: rotate(290deg);
+  }
+}
+.page-item {
+  .page-link {
+    color: $lightIcon;
+  }
+  &.active {
+    .page-link {
+      background-color: $lightIcon;
+      border-color: $lightIcon;
+    }
+  }
+}

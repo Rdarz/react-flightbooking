@@ -1,0 +1,46 @@
+@import "common/styles/_colors.scss";
+
+.sfilter-tabs {
+  background-color: $white;
+  margin-top: 2em;
+  a {
+    color: $primary;
+  }
+  .field-buttons {
+    margin: 0;
+    .btn-outline-secondary {
+      color: $red;
+      border-color: $red;
+      &:hover {
+        color: $white !important;
+        background-color: $red !important;
+        border: 0 !important;
+      }
+    }
+  }
+}
+
+.sfilter-datepicker {
+  // padding: 20px;
+
+  .field {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .searchBtn {
+      width: 100%;
+    }
+    .picker {
+      width: 100%;
+      .picker-input {
+        width: 100%;
+        .picker-input__text {
+          width: 100%;
+          padding: 5px 10px;
+          border: 1px solid $borderColor;
+          border-radius: 5px;
+          color: $textColor;
+        }
+      }
+    }
+  }
+}
